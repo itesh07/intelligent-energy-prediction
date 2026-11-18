@@ -1,0 +1,27 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Uploaded custom datasets & temporary files
+uploads/*
+!uploads/.gitkeep
+
+# Machine learning model artifacts (re-generable via python train_model.py)
+# Keep directory structure
+models/*.joblib
+!models/.gitkeep
+
+# Environment and secrets
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
